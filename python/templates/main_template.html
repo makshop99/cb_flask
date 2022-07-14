@@ -1,0 +1,13 @@
+<!-- This is a template file used by flask render_template() method -->
+<!doctype html>
+<title>Flask Example </title>
+{% if page_name %}
+  <h1>Flask {{page_name}}</h1><br>
+{% else %}
+  <h1>This is a nameless page</h1>
+{% endif %}
+
+<hr>
+<h2>this page was rendered at: {{time_stamp}}</h2>
+<hr>
+<a href="{{page_link}}">{{next_page}}</a>
