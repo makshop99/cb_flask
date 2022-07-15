@@ -2,7 +2,9 @@ from flask import Flask
 from flask import render_template
 from pages import home as home_content
 from pages import subpage as subpage_content
-app = Flask (__name__)
+#app = Flask (__name__)
+
+app = Flask(__name__, template_folder='templates', static_folder='statics')
 
 @app.route("/")
 @app.route("/home")
